@@ -218,7 +218,7 @@ body{
 .slider{
     display: flex;
     overflow: hidden;
-    height: calc(100vh-80px);
+    height: calc(100vh - 80px);
     scroll-behavior: smooth;
 }
 .container-productos{
@@ -912,7 +912,7 @@ footer{
     /*SLIDER PRODUCTOS*/
     .slider{
         margin-top: 100px;
-        height: calc(100vh-0);
+        height: calc(100vh - 0);
     }
     .descripcion-productos{
         margin-left: 0;
