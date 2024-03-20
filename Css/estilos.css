@@ -259,10 +259,15 @@ body{
     justify-content: center;
 }
 .imagen-porrones img{
-    width: 50%;
+  
+    width:40%;
+    
+    box-shadow: 0 0 35px #88805e;
+    border-radius: 30px;
     transform: scale(1.1);
     transition: all 0.3s;
 }
+
 .container-productos .imagen-porrones img:hover{
     transform: scale(1.2);
     
@@ -291,7 +296,7 @@ body{
     grid-template-rows: repeat(2, auto);
     gap: 30px;
     grid-template-areas: "reconocido       imagen          popular"
-                          "innovador        imagen        historico";
+                          "innovador       imagen         historico";
                           
                                    
 }
@@ -759,12 +764,13 @@ footer{
     
     
     /*SLIDER PRODUCTOS EN TABLET*/
+   
     .container-productos {
         flex-direction: column;
+        
     }
     .descripcion-productos{
         width: 70%;
-
     }
     .descripcion-productos P{
         font-size: 2.2VW;
@@ -775,6 +781,15 @@ footer{
     .descripcion-productos .btn:hover{
         padding: 10px 30px;
     }
+    
+    .imagen-porrones{
+       
+        
+       
+        
+       margin-top: 12%;
+    }
+    
 
     /*SECCION PRESENTACION*/
     .presentacion-container{
