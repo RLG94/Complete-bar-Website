@@ -43,6 +43,7 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     color: #FFF;
+    border-radius: 7px;
     background: var(--color-primario);
     font-weight: 700;
     padding:15px 30px;
@@ -62,11 +63,12 @@ body{
 
 }
 /* BOTON DE IR ARRIBA */
-#btn-top{
+#butn-top{
     width: 50px;
     height: 50px;
     background: #64512fd3;
     cursor: pointer;
+    border-radius: 10%;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -74,27 +76,27 @@ body{
     transform: translateY(200%);
     transition: all 0.5s;
 }
-#btn-top.show{
+#butn-top.show{
 
     transform: translateY(0);
     
 }
-#btn-top.scrollFinal{
+#butn-top.scrollFinal{
     transform: translateY(-200%);
 }
-#btn-top span{
-    color: #d4edda;
+#butn-top span{
+    color: #ecebd8;
     font-size: 25px;
     width: 100%;
     text-align: center;
     line-height: 50px;
     transition: all 0.5s;
 }
-#btn-top:hover{
+#butn-top:hover{
     background: #64512f;
 
 }
-#btn-top:hover span{
+#butn-top:hover span{
     transform: translateY(-5px);
 
 }
@@ -518,11 +520,13 @@ body{
 /* SECCION CAJA DE CONTACTO  */
 
 #contacto{
-    height: 50vh;
-    padding: 60px;
+    
+    min-height: 1vh;
+    
+    padding: 60px ;
     position: relative;
     padding-bottom: 0px;
-    margin-bottom: 180px;
+   
 }
 #formulario{
     width: 70%;
@@ -623,7 +627,7 @@ body{
     transition: all 0.5s;
     z-index: 6000;
 }
-alert.show{
+.alert.show{
     transform: translateY(50%);
 }
 .alert.hide{
@@ -703,16 +707,17 @@ footer{
     font-weight: 670;
     font-size: 16px;
     background: var(--color-secundario-sombra);
+    border-radius:5px ;
     letter-spacing: 0.5px;
     transform: translateY(60px);
     transition: all 0.5s;
 }
 .sociales-metodo i:hover + span{
-    transform: translateY(0px);
+    transform: translateY(5px);
 
 }
 .sociales-metodo a:hover+ span{
-    transform: translateY(0px);
+    transform: translateY(5px);
 }
 
 .sociales-metodo i:hover{
@@ -727,10 +732,10 @@ footer{
 .mapa{
     display: flex;
     justify-content: center;
-    margin-bottom: 95px;
+    margin-bottom: 195px;
     width: 100%;
     height: 35vh;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 .mapa iframe{
     width: 40%;
@@ -821,12 +826,28 @@ footer{
     }
 
     /*FOOTER*/
+    .sociales-metodo span{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px 0;
+        font-weight: 670;
+        font-size: 16px;
+        background:none;
+        letter-spacing: 0.5px;
+        transform: translateY(0px);
+        transition: all 0.5s;
+    }
+   
+    
     .sociales-metodo{ 
         height: 80px;
     }
     .sociales-metodo i{
         line-height: 80px;
-        font-size: 22px;    
+        font-size: 22px;   
+        transform: translateY(-20px); 
     }
     .sociales-metodo span{   
         padding: 10px 0;
@@ -834,7 +855,7 @@ footer{
         font-size: 12px;
         letter-spacing: 0.5px;  
     }
-
+    
     
 }   
 
@@ -1021,10 +1042,11 @@ footer{
  }
  .sociales-metodo i{
     line-height: 65px;
-    font-size: 20px;    
+    font-size: 20px;  
+    transform: translateY(-13px);  
    }
 .sociales-metodo span{   
-    padding: 10px 0;
+    padding: 10px 10px;
     font-weight: 670;
     font-size: 8px;
     letter-spacing: 0.5px;  

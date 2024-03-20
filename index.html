@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b18605fd">                                                                     <!---  Display theme for supported web browsers  ---->
+    <meta name="desciption" content="Paxina web do rincon do porron, emblematica taberna en Santiago de Compostela">  <!---  Meta description for Google SEO  ---->
     <title>Rincón do Porrón</title>
+    <!---  OPEN GRAPH  ---->
+    <meta property="og:title" content="Paxina web do Rincon do Porron, Santiago de Compostela">
+    <meta property="og:description" content="Emblematica taberna da zona vella de Santiago">
+    <meta property="og:image" content="./Imagenes/foto local.jpg">
+    <meta property="og:locale" content="es-ES">
+    <meta property="og:image:alt" content="Fotografia do interior do local">
+    
+    
     <link rel="stylesheet" href="./Css/estilos.css">
     <link rel="stylesheet" href="./Librerias/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="shortcut icon" href="./Imagenes/Loguito.jpg">
@@ -12,17 +22,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 
 <body>
     <!-- BOTON DE IR ARRIBA -->
-    <div id="btn-top">
+    <div id="butn-top" class="">
       <span class="fas fa-angle-up"></span>
     </div>
    
     <!-- MENU PRINCIPAL TOP-BAR -->
-    <div class="top-bar">
+    <header class="top-bar">
 
         <div class="logo" id="logo"><img src="./Imagenes/Logo-libre.png" alt="logo"></div>
 
@@ -51,7 +63,7 @@
 
 
 
-    </div>
+      </header>
 
     <!-- PORRONES EN SLIDE -->
 
@@ -67,7 +79,7 @@
                              <h1>Auga de Valencia</h1>
                               <p>O de sempre, o que nunca falta, o perfecto equilibrio entre sabor seco e doce. Co seu sabor a laranxa
                                logra conquistar todos os padais, pero ollo! cando te queres dar conta igual xa vas de lado... </p>
-                             <button class="btn">Descubre máis <span class="fas fa-angle-right"></span></button>
+                             <button class="btn" id="descubreMas">Descubre máis <span class="fas fa-angle-right"></span></button>
                         </div>
                         <div class="imagen-porrones"><img src="./Imagenes/porrones/Agua-de-valencia.png" alt=""></div>
              </div>
@@ -398,7 +410,7 @@
 
       <div class="sociales-metodo">
         <i class="fas fa-envelope"></i>
-        <span>rincondoporron@gmail.com</span>
+        <span>rincondoporron @gmail.com</span>
       </div>
 
       <div class="sociales-metodo">

@@ -62,7 +62,7 @@ function validar(e) {
       alertError.classList.remove("show");
       alertError.classList.add("hide");
 
-    }, 2500);
+    }, 2700);
 
   } else {
     e.preventDefault();
@@ -99,11 +99,14 @@ function validarEmail(email) {
 //EVENTOS DEL FORMULARIO
 formulario.addEventListener("submit", validar);
 
+
+
 //BOTON SCROLL TOP
- var btnTop = document.getElementById("btn-top");
+ var btnTop = document.getElementById("butn-top");
 
 
  //DETECTAR EL SCROLL EN LA WEB y POSICIONAR BOTON
+
 
  window.addEventListener("scroll",function(){
     var scroll= document.documentElement.scrollTop;
@@ -118,7 +121,7 @@ formulario.addEventListener("submit", validar);
 
     //BOTON END OF THE PAGE 
 
-    if ( fullSize <= (scroll + sizeVP)){
+    if ( fullSize === (scroll + sizeVP )){
       btnTop.classList.add("scrollFinal");
      } else{
       btnTop.classList.remove("scrollFinal");
@@ -126,6 +129,7 @@ formulario.addEventListener("submit", validar);
      }
   
  })
+
 
 //EVENTO CLICK EN EL BOTON   
 btnTop.addEventListener("click", function(){
@@ -141,4 +145,11 @@ Logo.addEventListener("click",function(){
 })
 
    
-    
+
+let btnDescubre = document.getElementsByClassName("btn");
+Array.from(btnDescubre).forEach(function(boton) {
+  boton.addEventListener("click", function() { document.getElementById("sabores").scrollIntoView({})
+
+
+
+})})
